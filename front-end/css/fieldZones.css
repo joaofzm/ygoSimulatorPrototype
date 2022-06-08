@@ -5,20 +5,20 @@
 }
 
 body {
-  background: rgb(49, 49, 49);
+  background: rgb(45, 42, 42);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .board {
-  background-color: rgba(149, 70, 0, 0.637);
+  background-color: rgba(23, 20, 20, 0.637);
   position: absolute;
-  width: 60%;
-  height:85%;
-  top: 0%;
+  width: 55%;
+  height:82%;
+  top: 5%;
   border: 5px solid rgb(255, 255, 255);
-  left: 18%;
-  transform: perspective(1500px) rotateX(35deg);
+  left: 40%;
+  transform: perspective(1500px) rotateX(15deg);
 }
 
 .opponentBoard {
@@ -29,10 +29,6 @@ body {
   position: absolute;
   top: 0%;
   left: 0%;
-}
-
-#opponentBoardUl {
-  /* margin-top: 5%; */
 }
 
 .neutralBoard {
@@ -89,39 +85,39 @@ body {
 }
 
 .playerMonsterZone{
-  background-color: rgb(206, 206, 0);
+  background-color: rgb(206, 113, 0);
 }
 
 .playerSpellZone {
-  background-color: rgb(206, 206, 0);
+  background-color: rgb(206, 113, 0);
 }
 
 .playerDeckZone {
-  background-color: rgb(170, 170, 0);
+  background-color: rgb(173, 95, 0);
 }
 
 .playerGraveyardZone {
-  background-color: rgb(170, 170, 0);
+  background-color: rgb(173, 95, 0);
 }
 
 .playerBanishedZone {
-  background-color: rgb(170, 170, 0);
+  background-color: rgb(173, 95, 0);
 }
 
 .playerExtraDeckZone{
-  background-color: rgb(170, 170, 0);
+  background-color: rgb(173, 95, 0);
 }
 
 .playerFieldZone{
-  background-color: rgb(170, 170, 0);
+  background-color: rgb(173, 95, 0);
 }
 
 .opponentMonsterZone{
-  background-color: rgb(0, 127, 150);
+  background-color: rgb(0, 166, 196);
 }
 
 .opponentSpellZone {
-  background-color: rgb(0, 127, 150);
+  background-color: rgb(0, 166, 196);
 }
 
 .opponentDeckZone {
@@ -145,7 +141,7 @@ body {
 }
 
 .extraZone {
-  background-color: rgb(0, 199, 199);
+  background-color: rgb(161, 32, 32);
 }
 
 #opponentDeckZone,
@@ -155,13 +151,14 @@ body {
 #opponentSpellZone2,
 #opponentSpellZone1,
 #opponentExtraDeckZone,
-#opponentGraveyeardZone,
+#opponentGraveyardZone,
 #opponentMonsterZone5,
 #opponentMonsterZone4,
 #opponentMonsterZone3,
 #opponentMonsterZone2,
 #opponentMonsterZone1,
-#opponentFieldZone {
+#opponentFieldZone,
+#opponentBanishedZone {
   transform: rotate(180deg);
 }
 
@@ -172,13 +169,14 @@ body {
 #playerSpellZone2,
 #playerSpellZone1,
 #playerExtraDeckZone,
-#playerGraveyeardZone,
+#playerGraveyardZone,
 #playerMonsterZone5,
 #playerMonsterZone4,
 #playerMonsterZone3,
 #playerMonsterZone2,
 #playerMonsterZone1,
-#playerFieldZone {
+#playerFieldZone,
+#playerBanishedZone {
   transform: rotate(0deg);
 }
 
