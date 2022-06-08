@@ -1,13 +1,13 @@
-package br.com.joaofzm15.projectv;
+package br.com.joaofzm15.astral;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AstralApplication {
+public class Astral {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AstralApplication.class, args);
+		SpringApplication.run(Astral.class, args);
 	}
 
 }
