@@ -1,18 +1,10 @@
 .opponentHand {
-<<<<<<< HEAD
     background-color: rgba(0, 128, 255, 0.221);
-=======
-    /* background-color: rgba(0, 128, 255, 0.221); */
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
     position: absolute;
     width: 52%;
     height:12%;
     top: 0%;
-<<<<<<< HEAD
     left: 38%;
-=======
-    left: 42%;
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
     text-align: center;
 
 }
@@ -48,32 +40,13 @@
 
 
 
-<<<<<<< HEAD
 .playerHand {
     background-color: rgba(0, 128, 255, 0.221);
-=======
-
-
-
-
-
-
-
-
-
-
-.playerHand {
-    /* background-color: rgba(0, 128, 255, 0.221); */
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
     position: absolute;
     width: 58%;
     height:15%;
     top: 85%;
-<<<<<<< HEAD
     left: 35.1%;
-=======
-    left: 39.1%;
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
     text-align: center;
 
 }

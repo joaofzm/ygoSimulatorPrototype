@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Mocked cards */
 #playerMonsterZone5 {
   background-image: url("/front-end/resources/cards/chengying.png");
@@ -11,8 +10,6 @@
 
 
 
-=======
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,11 +29,7 @@ body {
   height:82%;
   top: 5%;
   border: 5px solid rgb(255, 255, 255);
-<<<<<<< HEAD
   left: 36%;
-=======
-  left: 40%;
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
   transform: perspective(1500px) rotateX(15deg);
 }
 
@@ -92,14 +85,8 @@ body {
   border: 3px solid rgb(255, 255, 255);
   margin-top: 2%;
   margin-right: 2%;
-<<<<<<< HEAD
   background-size: cover;
   background-repeat: round;
-=======
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
->>>>>>> e911736b2ee57aada06188cd08810274eb15882a
   transition: 0.1s;
 }
 
