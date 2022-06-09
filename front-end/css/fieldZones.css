@@ -1,13 +1,21 @@
 /* Mocked cards */
-#playerMonsterZone5 {
+#playerMonsterZone4 {
   background-image: url("/front-end/resources/cards/chengying.png");
 }
-
 #playerMonsterZone3 {
   background-image: url("/front-end/resources/cards/chixiao.png");
 }
+#opponentMonsterZone3 {
+  background-image: url("/front-end/resources/cards/chixiao.png");
+}
 
+#playerDeckZone, #playerExtraDeckZone {
+  background-image: url("/front-end/resources/cards/cover2.png");
+}
 
+#opponentDeckZone, #opponentExtraDeckZone {
+  background-image: url("/front-end/resources/cards/cover1.png");
+}
 
 
 * {
@@ -23,12 +31,12 @@ body {
 }
 
 .board {
-  background-color: rgba(23, 20, 20, 0.637);
+  background-color: rgba(12, 12, 12, 0.734);
+  border: 2px solid rgb(255, 255, 255);
   position: absolute;
   width: 55%;
   height:82%;
   top: 5%;
-  border: 5px solid rgb(255, 255, 255);
   left: 36%;
   transform: perspective(1500px) rotateX(15deg);
 }
@@ -50,7 +58,6 @@ body {
   display: block;
   position: absolute;
   top: 40%;
-  left: 0%;
 }
 
 .playerBoard {
@@ -66,132 +73,70 @@ body {
 .boardZoneUl {
   height: 48%;
   width: 100%;
-  margin-left: 5%;
+  margin-left: 2.5%;
   display: flex;
 }
 
 .neutralBoard .boardZoneUl {
   height: 96%;
-  margin-left: 5%;
+
 }
 
 .boardZoneLi {
-  background: rgba(0, 0, 0, 0.705);
   margin: 0;
   padding: 0;
   display: inline-block;
   height: 89.5%;
   width: 11.3%;
-  border: 3px solid rgb(255, 255, 255);
   margin-top: 2%;
-  margin-right: 2%;
+  margin-right: 4.6%;
   background-size: cover;
   background-repeat: round;
   transition: 0.1s;
 }
 
+.banishedZone{
+  position: absolute;
+  opacity: 0.1;
+  height: 43%;
+}
+.playerBanishedZone{
+  top: -8%;
+  left: 99.5%;
+}
+.opponentBanishedZone{
+  top: 56%;
+  left: -10.5%;
+}
+
+.playerMonsterZone,.playerSpellZone{
+  border: 1px solid rgb(255, 157, 0);
+}
+.playerDeckZone,.playerGraveyardZone,.playerBanishedZone,.playerExtraDeckZone,.playerFieldZone {
+  border: 1px solid rgb(255, 157, 0);
+}
+
+.opponentMonsterZone,.opponentSpellZone{
+  border: 1px solid rgb(0, 187, 255);
+
+}
+.opponentDeckZone,.opponentGraveyardZone,.opponentBanishedZone,.opponentExtraDeckZone,.opponentFieldZone {
+  border: 1px solid rgb(0, 187, 255);
+}
+
+.extraZone{
+  border: 1px solid rgb(255, 0, 0);
+}
 
 #extraZoneFiller{
   opacity: 0;
 }
 
-.playerMonsterZone{
-  background-color: rgb(206, 113, 0);
-}
-
-.playerSpellZone {
-  background-color: rgb(206, 113, 0);
-}
-
-.playerDeckZone {
-  background-color: rgb(173, 95, 0);
-}
-
-.playerGraveyardZone {
-  background-color: rgb(173, 95, 0);
-}
-
-.playerBanishedZone {
-  background-color: rgb(173, 95, 0);
-}
-
-.playerExtraDeckZone{
-  background-color: rgb(173, 95, 0);
-}
-
-.playerFieldZone{
-  background-color: rgb(173, 95, 0);
-}
-
-.opponentMonsterZone{
-  background-color: rgb(0, 166, 196);
-}
-
-.opponentSpellZone {
-  background-color: rgb(0, 166, 196);
-}
-
-.opponentDeckZone {
-  background-color: rgb(0, 109, 128);
-}
-
-.opponentGraveyardZone {
-  background-color: rgb(0, 109, 128);
-}
-
-.opponentBanishedZone {
-  background-color: rgb(0, 109, 128);
-}
-
-.opponentExtraDeckZone{
-  background-color: rgb(0, 109, 128);
-}
-
-.opponentFieldZone{
-  background-color: rgb(0, 109, 128);
-}
-
-.extraZone {
-  background-color: rgb(161, 32, 32);
-}
-
-#opponentDeckZone,
-#opponentSpellZone5,
-#opponentSpellZone4,
-#opponentSpellZone3,
-#opponentSpellZone2,
-#opponentSpellZone1,
-#opponentExtraDeckZone,
-#opponentGraveyardZone,
-#opponentMonsterZone5,
-#opponentMonsterZone4,
-#opponentMonsterZone3,
-#opponentMonsterZone2,
-#opponentMonsterZone1,
-#opponentFieldZone,
-#opponentBanishedZone {
+.opponentZone {
   transform: rotate(180deg);
 }
 
-#playerDeckZone,
-#playerSpellZone5,
-#playerSpellZone4,
-#playerSpellZone3,
-#playerSpellZone2,
-#playerSpellZone1,
-#playerExtraDeckZone,
-#playerGraveyardZone,
-#playerMonsterZone5,
-#playerMonsterZone4,
-#playerMonsterZone3,
-#playerMonsterZone2,
-#playerMonsterZone1,
-#playerFieldZone,
-#playerBanishedZone {
-  transform: rotate(0deg);
-}
-
 .boardZoneLi:hover {
-  border: 3px solid rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
   transition: 0.1s;
 }
