@@ -1,0 +1,28 @@
+package br.com.joaofzm15.astral.domain.card.monster;
+
+public enum Type {
+	AQUA,
+	BEAST,
+	BEASTWARRIOR,
+	CYBERSE,
+	DINOSAUR,
+	DIVINEBEAST,
+	DRAGON,
+	FAIRY,
+	FIEND,
+	FISH,
+	INSECT,
+	MACHINE,
+	PLANT,
+	PSYCHIC,
+	PYRO,
+	REPTILE,
+	ROCK,
+	SEASERPENT,
+	SPELLCASTER,
+	THUNDER,
+	WARRIOR,
+	WINGEDBEAST,
+	WYRM,
+	ZOMBIE;
+}
