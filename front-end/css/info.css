@@ -18,6 +18,8 @@
   position: relative;
   top: 13%;
   left: 7.5%;
+  background-size: cover;
+  background-repeat: round;
 }
 
 #logoInfo {

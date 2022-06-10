@@ -1,0 +1,42 @@
+#playerDeckZone, #playerExtraDeckZone {
+    background-image: url("/front-end/resources/cards/cover2.png");
+}
+#opponentDeckZone, #opponentExtraDeckZone {
+    background-image: url("/front-end/resources/cards/cover1.png");
+}
+
+
+
+
+#playerMonsterZone2 {
+    background-image: url("/front-end/resources/cards/taia.png");
+}
+#playerMonsterZone3 {
+    background-image: url("/front-end/resources/cards/chixiao.png");
+}
+#playerMonsterZone4 {
+    background-image: url("/front-end/resources/cards/chengying.png");
+}
+
+#playerSpellZone2 {
+    background-image: url("/front-end/resources/cards/cover2.png");
+}
+#playerSpellZone3 {
+    background-image: url("/front-end/resources/cards/emergency.png");
+}
+
+
+
+
+#opponentMonsterZone1 {
+    background-image: url("/front-end/resources/cards/moye.png");
+}
+#opponentMonsterZone3 {
+    background-image: url("/front-end/resources/cards/chixiao.png");
+}
+#opponentSpellZone4 {
+    background-image: url("/front-end/resources/cards/blackout.png");
+}
+#opponentSpellZone2 {
+    background-image: url("/front-end/resources/cards/cover1.png");
+}

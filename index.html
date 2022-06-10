@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="front-end/css/fieldZones.css" />
   <link rel="stylesheet" href="front-end/css/hand.css" />
   <link rel="stylesheet" href="front-end/css/info.css" />
+  <link rel="stylesheet" href="front-end/css/mocked.css" />
 
 </head>
 
@@ -16,55 +17,55 @@
   <div class="board">
     <div class="opponentBoard">
       <ul class="boardZoneUl">
-        <li class="boardZoneLi deckZone opponentDeckZone opponentZone" id="opponentDeckZone"></li>
-        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone5"></li>
-        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone4"></li>
-        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone3"></li>
-        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone2"></li>
-        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone1"></li>
-        <li class="boardZoneLi extraDeckZone opponentExtraDeckZone opponentZone" id="opponentExtraDeckZone"></li>
+        <li class="boardZoneLi deckZone opponentDeckZone opponentZone" id="opponentDeckZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone5" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone4" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone3" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone2" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone opponentSpellZone opponentZone" id="opponentSpellZone1" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi extraDeckZone opponentExtraDeckZone opponentZone" id="opponentExtraDeckZone" onmouseover="updateInfo(this)"></li>
       </ul>
       <ul class="boardZoneUl">
-        <li class="boardZoneLi banishedZone opponentBanishedZone opponentZone" id="opponentBanishedZone"></li>
-        <li class="boardZoneLi graveyardZone opponentGraveyardZone opponentZone" id="opponentGraveyardZone"></li>
-        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone5"></li>
-        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone4"></li>
-        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone3"></li>
-        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone2"></li>
-        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone1"></li>
-        <li class="boardZoneLi fieldZone opponentFieldZone opponentZone" id="opponentFieldZone"></li>
+        <li class="boardZoneLi banishedZone opponentBanishedZone opponentZone" id="opponentBanishedZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi graveyardZone opponentGraveyardZone opponentZone" id="opponentGraveyardZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone5" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone4" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone3" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone2" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone opponentMonsterZone opponentZone" id="opponentMonsterZone1" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi fieldZone opponentFieldZone opponentZone" id="opponentFieldZone" onmouseover="updateInfo(this)"></li>
       </ul>
     </div>
     <div class="neutralBoard">
       <ul class="boardZoneUl">
         <li class="boardZoneLi extraZone" id="extraZoneFiller"></li>
         <li class="boardZoneLi extraZone" id="extraZoneFiller"></li>
-        <li class="boardZoneLi extraZone" id="extraZone1"></li>
+        <li class="boardZoneLi extraZone" id="extraZone1" onmouseover="updateInfo(this)"></li>
         <li class="boardZoneLi extraZone" id="extraZoneFiller"></li>
-        <li class="boardZoneLi extraZone" id="extraZone2"></li>
+        <li class="boardZoneLi extraZone" id="extraZone2" onmouseover="updateInfo(this)"></li>
         <li class="boardZoneLi extraZone" id="extraZoneFiller"></li>
         <li class="boardZoneLi extraZone" id="extraZoneFiller"></li>
       </ul>
     </div>
     <div class="playerBoard">
       <ul class="boardZoneUl">
-        <li class="boardZoneLi fieldZone playerFieldZone" id="playerFieldZone"></li>
-        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone1"></li>
-        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone2"></li>
-        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone3"></li>
-        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone4"></li>
-        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone5"></li>
-        <li class="boardZoneLi graveyardZone playerGraveyardZone" id="playerGraveyardZone"></li>
-        <li class="boardZoneLi banishedZone playerBanishedZone" id="playerBanishedZone"></li>
+        <li class="boardZoneLi fieldZone playerFieldZone" id="playerFieldZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone1" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone2" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone3" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone4" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi monsterZone playerMonsterZone" id="playerMonsterZone5" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi graveyardZone playerGraveyardZone" id="playerGraveyardZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi banishedZone playerBanishedZone" id="playerBanishedZone" onmouseover="updateInfo(this)"></li>
       </ul>
       <ul class="boardZoneUl">
-        <li class="boardZoneLi extraDeckZone playerExtraDeckZone" id="playerExtraDeckZone"></li>
-        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone1"></li>
-        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone2"></li>
-        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone3"></li>
-        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone4"></li>
-        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone5"></li>
-        <li class="boardZoneLi deckZone playerDeckZone" id="playerDeckZone"></li>
+        <li class="boardZoneLi extraDeckZone playerExtraDeckZone" id="playerExtraDeckZone" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone1" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone2" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone3" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone4" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi spellZone playerSpellZone" id="playerSpellZone5" onmouseover="updateInfo(this)"></li>
+        <li class="boardZoneLi deckZone playerDeckZone" id="playerDeckZone" onmouseover="updateInfo(this)"></li>
       </ul>
     </div>
   </div>
@@ -72,23 +73,20 @@
 
   <div class="opponentHand">
     <ul class="opponentHandUl">
-      <li class="opponentHandLi"></li>
-      <li class="opponentHandLi"></li>
-      <li class="opponentHandLi"></li>
-      <li class="opponentHandLi"></li>
-      <li class="opponentHandLi"></li>
+      <li class="opponentHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="opponentHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="opponentHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="opponentHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="opponentHandLi" onmouseover="updateInfo(this)"></li>
     </ul>
   </div>
 
   <div class="playerHand">
     <ul class="playerHandUl">
-      <li class="playerHandLi"></li>
-      <li class="playerHandLi"></li>
-      <li class="playerHandLi"></li>
-      <li class="playerHandLi"></li>
-      <li class="playerHandLi"></li>
-      
-      
+      <li class="playerHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="playerHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="playerHandLi" onmouseover="updateInfo(this)"></li>
+      <li class="playerHandLi" onmouseover="updateInfo(this)" id="handSlot4"></li>
     </ul>
   </div>
 
