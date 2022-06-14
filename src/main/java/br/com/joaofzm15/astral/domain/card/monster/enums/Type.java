@@ -1,4 +1,4 @@
-package br.com.joaofzm15.astral.domain.card.monster;
+package br.com.joaofzm15.astral.domain.card.monster.enums;
 
 public enum Type {
 	AQUA,
